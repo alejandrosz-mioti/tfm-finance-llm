@@ -1,0 +1,97 @@
+--------- CASOS DE USO ---------
+
+--- COMANDOS TELEGRAM ---
+1. /start
+2. /help
+3. /resumen
+4. /cancelar
+5. /grafica
+6. /streamlit
+
+--- GESTIÓN DE CUENTAS ---
+1. Crea una cuenta llamada BBVA con 1000 euros
+2. Crea una hucha Coche dentro de BBVA
+3. Crea un bolsillo llamado Ahorro con 50 euros
+4. Pon el saldo de BBVA a 5000
+5. Elimina la cuenta BBVA
+6. Elimina la cuenta esa
+
+--- TRANSACCIONES DE DINERO ---
+1. Ingresa 1500 de nómina en BBVA
+2. He gastado 50 euros en gasolina con BBVA
+3. He gastado 50 euros en gasolina con la subcuenta ahorro de BBVA
+4. Pon 50 euros en la subcuenta ahorro de BBVA
+5. Saca 50 euros de la cuenta Ahorro para una cena
+6. Me han hecho bizum de 20 euros
+7. Quita 20 euros de la subcuenta coche de bbva
+8. Pon 50 euros en la subcuenta coche de BBVA
+9. Antes de ayer me compré unas zapatillas por 20 euros
+
+--- TRANSFERENCIAS ENTRE CUENTAS PROPIAS ---
+1. Pasa 200 euros de BBVA a Ahorro (principal -> subcuenta de esa principal)
+2. Pasa 200 euros de ahorro a bbva (subcuenta de esa principal -> principal)
+3. (principal -> principal)
+4. (subcuenta -> subcuenta (misma principal))
+5. (subcuenta distinta principal -> principal)
+6. (principal -> subcuenta distinta principal)
+
+--- CONSULTAS FINANZAS PROPIAS --- (POR TIEMPO, CONCEPTO, CUENTAS)
+1. Cuanto he gastado hoy?
+2. Cuánto gasté ayer?
+3. cuanto gasté antes de ayer ?
+4. cuanto gasté en gasolina este mes?
+5. que movimientos hice ayer ?
+6. que ingresos he tenido este mes ?
+7. hazme un resumen de los gastos/ingresos de este mes
+8. ver mis gastos de enero
+9. hazme un resumen de este mes (todo no solo gastos)
+10. cuanto me he gastado en cenas este mes ?
+11. Ver movimientos de la cuenta Ahorro
+12. muestrame los gastos de la cuenta gastos mensuales de santander
+13. muestrame los gastos de la cuenta ahorro
+14. Qué ha pasado en BBVA últimamente?
+15. dime el estado actual de mis cuentas
+
+
+--- CONSULTAS FINANZAS TIEMPO REAL YAHOO- FINANCE ---
+1. A cuánto están las acciones de Apple?
+2. Dime el precio de Tesla
+3. Cómo va microsoft hoy?
+4. Cuál es el precio de NVIDIA hoy?
+5. a cuanto cotiza el banco santander?
+6. precio de las acciones de bbva ?
+7. precio del bitcoin
+8. como va el ibex 35?
+9. como va el nasdaq?
+10. Precio de Panadería Manolo
+
+
+--- CONSULTAS TABLAS CON DATOS EXTERNOS ---
+-- maximo datos 2025-02-21
+1. A cuánto estaba el euro dólar el 2023-10-05?
+2. Si hubiera cambiado dinero euro dolar el 1 de marzo de 2023, ¿cuánto estaba?
+
+-- maximo datos 2024 -- 
+3. cuanto fue la inflacion en españa el año 2024? 
+4. cuanto fue la inflacion en españa el año 1980? 
+5. cuanto fue la inflacion en albania en 2024?
+
+-- CONSUMO GASTO MEDIO --
+6. Cuál es el gasto medio en transporte? (el último disponible)
+7. cual es le gasto medio en el año 2023? 
+8. Cuánto gastamos en bares y hoteles?
+9. Cuál es el gasto total medio por hogar?
+10. Cuánto se gastaba en comida en el año 2006?
+
+-- USUARIO PERDIDO ---
+1. hola, que puedo hacer contigo?
+2. que funciones puedes hacer?
+3. ayuda
+
+
+
+
+-- PROBLEMA PLANTEADO POR TUTOR 
+Tu bot funciona bien contigo probando... pero ¿qué pasaría si 1.000 personas lo usaran a la vez? ¿Dónde explotaría primero?
+-- crear un sistema de cola donde un "worker" va sando mensajes de la cola y enviandolos a Groq a una velocidad segura. 
+-- además de ir rotando por varias apis (diferentes LLMs)

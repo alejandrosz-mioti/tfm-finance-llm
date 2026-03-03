@@ -1,0 +1,11 @@
+# Ignorar datos persistentes de contenedores
+postgres_data/
+grafana_data/
+
+# Ignorar Python y sistema
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignorar archivos temporales de Streamlit
+.streamlit/static/

@@ -1,0 +1,14 @@
+apiVersion: 1
+datasources:
+  - name: PostgreSQL
+    type: grafana-postgresql-datasource
+    uid: ffc2kbdcgsj5se
+    isDefault: true
+    url: db:5432
+    user: admin
+    secureJsonData:
+      password: tfm_password
+    jsonData:
+      database: economia_db
+      sslmode: "disable"
+      postgresVersion: 15

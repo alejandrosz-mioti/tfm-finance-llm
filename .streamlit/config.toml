@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#00FF41"       # Verde Matrix / IA
+backgroundColor = "#0B0E11"    # Azul-negro muy profundo
+secondaryBackgroundColor = "#15191E" # Gris azulado oscuro para widgets
+textColor = "#FFFFFF"          # Blanco puro
+font = "sans serif"
